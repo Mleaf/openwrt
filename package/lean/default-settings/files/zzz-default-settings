@@ -16,6 +16,7 @@ rm -f /usr/lib/lua/luci/view/admin_status/index/ddns.htm
 rm -f /usr/lib/lua/luci/view/admin_status/index/minidlna.htm
 
 sed -i 's/\"services\"/\"system\"/g' /usr/lib/lua/luci/controller/ttyd.lua
+sed -i "s/'Drop invalid packets'));/'Drop invalid packets'));o = s.option(form.Flag, 'fullcone', _('Enable FullCone NAT'));/" /www/luci-static/resources/view/firewall/zones.js
 
 ln -sf /sbin/ip /usr/bin/ip
 
