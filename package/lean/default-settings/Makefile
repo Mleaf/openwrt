@@ -5,7 +5,7 @@
 # See /LICENSE for more information.
 
 include $(TOPDIR)/rules.mk
-OPENWRT_VERSION:= r190701-$(shell git log --pretty=format:'%h' -n 1|sed -e "s,\([0-9a-z]\{7\}\)[0-9a-z]*,\1,")
+OPENWRT_VERSION:= r190702-$(shell git log --pretty=format:'%h' -n 1|sed -e "s,\([0-9a-z]\{7\}\)[0-9a-z]*,\1,")
 PKG_NAME:=default-settings
 PKG_VERSION:=1.1
 PKG_RELEASE:=50
